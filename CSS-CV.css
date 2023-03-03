@@ -82,6 +82,22 @@ body {
             grid-column-end: 2;
             float: left;
             padding: 15px;}
+            
+            #Contacto {float: left;
+                  border: 1px solid #969494;
+                  text-align: left;
+                  padding: 8px;}
+             
+             h4 {color: rgb(61, 11, 29);
+                 font-size: 20px;
+                 font-weight: bold;
+                 margin: 15px;}
+ 
+             label {color: rgb(224, 216, 219);
+                    font-size: 15px;
+                    font-weight: bold;}
+             
+             hr {border-style: none;}
 
       #mitad {grid-column-start: 2;
             grid-column-end: 3;
