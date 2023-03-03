@@ -63,3 +63,9 @@ boton4.addEventListener("click", function(){
     boton4.id = "Youtube";
   }
 });
+
+document.getElementById('violin').addEventListener('mouseover', mouseOver);
+document.getElementById('violin').addEventListener('mouseout', mouseOut);
+
+function mouseOver() {document.getElementById("miaudio").play();}
+function mouseOut() {document.getElementById("miaudio").pause();}
