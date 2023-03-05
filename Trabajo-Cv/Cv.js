@@ -94,7 +94,7 @@ document.getElementById("violin").addEventListener("mouseout", function(){
   console.log("play");
   document.getElementById("miaudio").pause();
 })*/
-
+/**
 document.getElementById('violin').ready(function(){
   document.getElementById('violin').mouseover(function(){
             document.getElementById("miaudio").play();
@@ -102,10 +102,10 @@ document.getElementById('violin').ready(function(){
 });
  
 document.getElementById('violin').ready(function(){
-  document.getElementById('violin').mouseover(function(){
-              document.getElementById("miaudio").play();
-    });
- });
+  document.getElementById('violin').mouseout(function(){
+              document.getElementById("miaudio").pause();
+  });
+});*/
 
 function enviarFormulario(){
   var nombre = document.getElementById('nombre').value;
