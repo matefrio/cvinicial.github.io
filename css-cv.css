@@ -50,9 +50,10 @@ body {
                   height: 253px;
                   padding: 10px;}
                          
-.grid-container-arriba {display: grid;
-                        grid-template-columns: auto auto auto auto auto auto;
-                        /**background-image: url ('https://image.freepik.com/foto-gratis/fondo-textura-concreto-textura-grunge_7189-493.jpg');
+                  .grid-container-arriba {display: grid;
+                        grid-template-columns: auto auto auto;
+                        grid-template-columns: 30% 45% 25%;
+                        /**background-image: url('https://image.freepik.com/foto-gratis/fondo-textura-concreto-textura-grunge_7189-493.jpg');
                         background-repeat: no-repeat;
                         background-attachment: fixed;
                         background-size: cover;*/
@@ -65,15 +66,24 @@ body {
 
       menu {grid-column-start: 1;
             grid-column-end: 2;
-            float: left;}
+            float: left;
+            padding: 0px;}
 
       main {grid-column-start: 2;
-            grid-column-end: 6;
+            grid-column-end: 3;
             float: center;}
 
       pre {font-family: 'Mynerve', cursive;}
 
-      #datos  {float: right;}
+      #datos {grid-column-start: 3;
+              grid-column-end: 4;
+              text-align: right;
+              float: right;}
+            
+            button {border-style: outset;
+                    border-radius: 10px;
+                    border-color: rgb(158, 149, 137);
+                    background-color: white;}
 
 .grid-container-abajo {display: grid;
                        grid-template-columns: 50% 50%;}    
