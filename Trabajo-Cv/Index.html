@@ -29,7 +29,7 @@
 
         <main id="main">
             <header><h1 style="text-align: center; margin: 15px;"> Dawn Patterson</h1></header>
-            <a id="b" href=".\biografiaDawn.html" target="_blank">
+            <a id="b" href=".\biografia.html" target="_blank">
     <pre style="text-align: center;"> 
     Región de manos sucias de pinceles sin pelo
     de niños boca abajo de cepillos de dientes
@@ -102,19 +102,19 @@
                 <h4>Como ubicarme</h4>
                 <form action="" method="post">
                     <label for="nombre">Nombre</label><br>
-                    <input type="text" name="nombre" placeholder="Ingrese su Nombre">
+                    <input type="text" name="nombre" placeholder="Ingrese su Nombre" id="nombre">
                     <hr>
                     <label for="email">E-mail</label><br>
-                    <input type="email" name="email" placeholder="Ingrese su E-mail">
+                    <input type="text" name="email" placeholder="Ingrese su E-mail" id="email">
                     <hr>
-                    <input id="Enviar" type="button" value="Enviar">
+                    <input id="Enviar" type="button" onclick="enviarFormulario();" value="Enviar">
                     <hr>       
                 </form>
                 <button id ="violin" type="submit">
                     <img src="https://64.media.tumblr.com/485a988865a4562dd6457cca19a043d3/tumblr_pj6kl5Vn411wrnpguo1_400.gif" alt="violin">
                 </button>
                 <audio id="miaudio">
-                    <source src="E:\HTML\Trabajo Cv\GUR2H8Y-violin.mp3" type="audio/mpeg">
+                    <source src=".\GUR2H8Y-violin.mp3" type="audio/mpeg">
                 </audio>
             </div>
         </span>
@@ -135,16 +135,31 @@
             <p>Y para los Valientes, aquí les vá un regalo</p>
             <br>
             <h4 id="Rayuela">Rayuela</h4>
-            <pre id="rayuela1">
+            <pre id="rayuela1" class="ray">
                 Salta la rana
                 y el sapo se queda quieto
                 en los charcos de la tarde.
                 
                 Salta el sapo
                 y la rana se queda sentada
-                en el borde de la <input id="poema" type="text" name="poema" placeholder="Ingrese lo que sigue" >
+                en el borde de la <input id="poema" type="text" name="poema" placeholder="Ingrese lo que sigue">
                 <input id="probar" type="button" value="probar" onclick="reemplazar();">
-            </pre>             
+            </pre>
+            <pre id= "completo" style="display:none" class="compl">
+                Salta la rana
+                y el sapo se queda quieto
+                en los charcos de la tarde.
+
+                Salta el sapo\ny la rana se queda sentada
+                en el borde de la fuente.
+
+                Salta el viento
+                y los dos se quedan inmóviles
+                en el aire de la noche.
+                
+                Homero Aridjis.
+                <input id="reiniciar" type="button" value="reiniciar" onclick="reiniciar();" style="display:none; margin: 0px 0px 0px 68px;">
+            </pre>          
         </span>
     </div class="grid-container-abajo">
 

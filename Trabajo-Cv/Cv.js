@@ -95,6 +95,18 @@ document.getElementById("violin").addEventListener("mouseout", function(){
   document.getElementById("miaudio").pause();
 })*/
 
+document.getElementById('violin').ready(function(){
+  document.getElementById('violin').mouseover(function(){
+            document.getElementById("miaudio").play();
+  });
+});
+ 
+document.getElementById('violin').ready(function(){
+  document.getElementById('violin').mouseover(function(){
+              document.getElementById("miaudio").play();
+    });
+ });
+
 function enviarFormulario(){
   var nombre = document.getElementById('nombre').value;
   var email = document.getElementById('email').value;
@@ -128,7 +140,7 @@ function reemplazar() {
   else {
     alert('La palabra ingresada no es correcta.');
   }}*/
-
+/** 
 function reemplazar() {
   var palabra = document.getElementById('poema').value;
   var rayuela1= document.getElementById('rayuela1')
@@ -138,12 +150,12 @@ function reemplazar() {
     document.getElementById('poema').style.display = "none";
     document.getElementById('probar').style.display = "none";
     rayuela1.id = "completo";
-    document.getElementById('completo').innerHTML = '<pre>Salta la rana\ny el sapo se queda quieto\nen los charcos de la tarde.\n\nSalta el sapo\ny la rana se queda sentada\nen el borde de la fuente.\n\nSalta el viento\ny los dos se quedan inmóviles\nen el aire de la noche.\n\nHomero Aridjis.<input id="reiniciar" type="button" value="Reiniciar" onclick="reemplazar();" style="display:block"></pre>';  
+    document.getElementById('completo').innerHTML = '<pre>Salta la rana\ny el sapo se queda quieto\nen los charcos de la tarde.\n\nSalta el sapo\ny la rana se queda sentada\nen el borde de la fuente.\n\nSalta el viento\ny los dos se quedan inmóviles\nen el aire de la noche.\n\nHomero Aridjis.<input id="reiniciar" type="button" value="reiniciar" onclick="reiniciar();" style="display:block"></pre>';  
   })}
   else {alert('La palabra ingresada no es correcta.');
 }}
-/** 
-function reemplazar() {
+
+function reiniciar() {
   var completo = document.getElementById('completo');
   var contenidoInicial6 = completo.innerHTML;
 
@@ -154,4 +166,30 @@ function reemplazar() {
     completo.innerHTML = document.getElementById('rayuela1');
     completo.id = "rayuela1";
   })}}*/
+
+function reemplazar() {
+  var palabra = document.getElementById('poema').value;
     
+  if (palabra == 'fuente') {
+    document.getElementById('probar').addEventListener('click', function () {
+    document.getElementById('poema').style.display = "none";
+    document.getElementById('probar').style.display = "none";
+    document.getElementById('rayuela1').style.display = "none";
+    document.getElementById('completo').style.display = "block";
+    document.getElementById('reiniciar').style.display = "block";
+  })}
+  else {alert('La palabra ingresada no es correcta.');
+}}
+
+function reiniciar() {
+  var completo = document.getElementById('completo');
+  var contenidoInicial6 = completo.innerHTML;
+
+  if (completo.innerHTML == contenidoInicial6) {
+    document.getElementById('reiniciar').addEventListener('click', function () {
+    document.getElementById('poema').style.display = "block";
+    document.getElementById('probar').style.display = "block";
+    document.getElementById('rayuela1').style.display = "block";
+    document.getElementById('completo').style.display = "none";
+    document.getElementById('reiniciar').style.display = "none";
+  })}}

@@ -81,7 +81,7 @@ body {
       #work {grid-column-start: 1;
              grid-column-end: 2;
              float: left;
-             padding: 15px;}
+             padding: 30px;}
 
             #Contacto {float: left;
                        border: 1px solid #969494;
@@ -102,7 +102,7 @@ body {
       #mitad {grid-column-start: 2;
               grid-column-end: 3;
               float: right;
-              padding: 15px;}
+              padding: 30px;}
 
               #Rayuela {float: center;
                         font-style: italic;
@@ -110,14 +110,13 @@ body {
                         padding: 0px 0px 0px 53px;
                         color: rgb(238, 147, 162)}
                                    
-              #rayuela1 {float: center;
-                         font-style: italic;
-                         color: rgb(224, 216, 219);}
+              .ray {float: center;
+                    font-style: italic;
+                    color: rgb(224, 216, 219);}
 
-            #completo {padding: 0px 0px 0px 53px;
-                       float: center;
-                       font-style: italic;
-                       color: rgb(224, 216, 219);}
+              .compl {float: center;
+                      font-style: italic;
+                      color: rgb(224, 216, 219);}
 
 
 
