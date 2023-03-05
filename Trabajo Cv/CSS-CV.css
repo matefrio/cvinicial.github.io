@@ -104,6 +104,21 @@ body {
               float: right;
               padding: 15px;}
 
+              #Rayuela {float: center;
+                        font-style: italic;
+                        font-family: 'Mynerve', cursive;
+                        padding: 0px 0px 0px 53px;
+                        color: rgb(238, 147, 162)}
+                                   
+              #rayuela1 {float: center;
+                         font-style: italic;
+                         color: rgb(224, 216, 219);}
+
+            #completo {padding: 0px 0px 0px 53px;
+                       float: center;
+                       font-style: italic;
+                       color: rgb(224, 216, 219);}
+
 
 
 

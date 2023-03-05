@@ -64,8 +64,82 @@ boton4.addEventListener("click", function(){
   }
 });
 
+/**
 document.getElementById('violin').addEventListener('mouseover', mouseOver);
 document.getElementById('violin').addEventListener('mouseout', mouseOut);
 
 function mouseOver() {document.getElementById("miaudio").play();}
-function mouseOut() {document.getElementById("miaudio").pause();}
+function mouseOut() {document.getElementById("miaudio").pause();}*/
+/** 
+var boton5 = document.getElementById("violin");
+var contenidoInicial5 = boton5.innerHTML;
+var audio = document.getElementById("miaudio");
+
+boton5.addEventListener("mouseover", function(){
+  if (boton5.innerHTML == contenidoInicial5) {
+    audio.play();
+    boton5.id = "on5";   
+  } else {
+    boton5.innerHTML == contenidoInicial5;
+    boton5.id = "violin";
+  }
+});*/
+
+function enviarFormulario(){
+  var nombre = document.getElementById('nombre').value;
+  var email = document.getElementById('email').value;
+  if(nombre=="" || email==""){
+    alert("Por favor, complete los campos requeridos");
+  }else{
+    document.getElementById('nombre').value = "";
+    document.getElementById('email').value = "";
+    alert("Gracias por enviar su correo, a la brevedad me comunicaré con usted");
+  }
+};
+/**
+function reemplazar() {
+  var palabra = document.getElementById('poema').value;
+  if (palabra == 'fuente') {
+    document.getElementById('poema').style.display = 'none';
+    document.getElementById('probar').style.display = 'none';
+    document.getElementById('Rayuela1').innerHTML = '<pre id="completo">Salta la rana\ny el sapo se queda quieto\nen los charcos de la tarde.\n\nSalta el sapo\ny la rana se queda sentada\nen el borde de la fuente.\n\nSalta el viento\ny los dos se quedan inmóviles\nen el aire de la noche.\n\nHomero Aridjis.</pre>';
+    document.getElementById('reiniciar').style.display = 'block';
+  }
+  else {alert('La palabra ingresada no es correcta.');
+}}
+ 
+function reemplazar() {
+  var palabra = document.getElementById('poema').value;
+  if (palabra == 'fuente') {
+    document.getElementById('poema').style.display = 'none';
+    document.getElementById('probar').style.display = 'none';
+    document.getElementById('resultado').innerHTML = 'fuente.\n\nSalta el sapo\ny la rana se queda sentada\nen el borde de la fuente.\n\nSalta el viento\ny los dos se quedan inmóviles\nen el aire de la noche.\n\nHomero Aridjis.</pre>'
+  }
+  else {
+    alert('La palabra ingresada no es correcta.');
+  }}*/
+
+function reemplazar() {
+  var palabra = document.getElementById('poema').value;
+  if (palabra == 'fuente') {
+    document.getElementById('probar').addEventListener('click', function () {
+    document.getElementById('poema').style.display = "none";
+    document.getElementById('probar').style.display = "none";
+    var rayuela1= document.getElementById('rayuela1')
+    rayuela1.id = "completo";
+    document.getElementById('completo').innerHTML = '<pre>Salta la rana\ny el sapo se queda quieto\nen los charcos de la tarde.\n\nSalta el sapo\ny la rana se queda sentada\nen el borde de la fuente.\n\nSalta el viento\ny los dos se quedan inmóviles\nen el aire de la noche.\n\nHomero Aridjis.<input id="reiniciar" type="button" value="Reiniciar" onclick="reiniciar();" style="display:block"></pre>';  
+  })}
+  else {alert('La palabra ingresada no es correcta.');
+}}
+
+function reemplazar() {
+  var completo = document.getElementById('completo');
+  var contenidoInicial5 = completo.innerHTML;
+
+  if (completo.innerHTML == contenidoInicial5) {
+    document.getElementById('reiniciar').addEventListener('click', function () {
+    document.getElementById('poema').style.display = "block";
+    document.getElementById('probar').style.display = "block";
+    completo.innerHTML = document.getElementById('rayuela1');
+    completo.id = "rayuela1";
+  })}}
