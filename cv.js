@@ -106,6 +106,75 @@ document.getElementById('violin').ready(function(){
               document.getElementById("miaudio").pause();
   });
 });*/
+/**
+function playviolin () {
+    PlaySound = function () {
+        var audio = new Audio ('GUR2H8Y-violin.mp3')
+        audio.loop = false;
+        audio.play();}
+        console.log("hola mundo!")
+        PlaySound();
+    }
+
+function pauseviolin() {
+    PauseSound = function () {
+        var audio = new Audio ('GUR2H8Y-violin.mp3')
+        audio.loop = false;
+        audio.pause();}
+        console.log("chau mundo!")
+        PauseSound()}*/
+
+/**      
+function playviolin () {
+    var PlaySound = function () {
+        var audio = new Audio('GUR2H8Y-violin.mp3');
+        audio.loop = false;
+        audio.play();
+    };
+    
+    console.log('hola mundo!');
+    PlaySound();
+    }
+
+function pauseviolin () {
+    var PauseSound = function () {
+        var audio = new Audio('GUR2H8Y-violin.mp3');
+        audio.loop = false;
+        audio.pause();
+    };
+    
+    console.log('chau mundo!');
+    PauseSound();
+    }*/
+/** 
+function playviolin() {
+    var audio = new Audio('GUR2H8Y-violin.mp3');
+    audio.loop = true;
+    audio.play();
+    
+    console.log('hola mundo!');
+    
+    return function pauseviolin() {
+        audio.pause();
+        console.log('chau mundo!');
+    };
+    }
+    
+    var pause = playviolin();*/
+
+var audio = new Audio('GUR2H8Y-violin.mp3');
+
+function playviolin() {
+  audio.loop = true;
+  audio.play();
+
+  console.log('tocame');
+}
+
+function pauseviolin() {
+  audio.pause();
+  console.log('callate');
+}
 
 function enviarFormulario(){
   var nombre = document.getElementById('nombre').value;
