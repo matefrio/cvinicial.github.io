@@ -162,7 +162,7 @@ function playviolin() {
     
     var pause = playviolin();*/
 
-var audio = new Audio('GUR2H8Y-violin.mp3');
+var audio = new Audio('./GUR2H8Y-violin.mp3');
 
 function playviolin() {
   audio.loop = true;
