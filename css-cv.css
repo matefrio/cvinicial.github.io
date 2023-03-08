@@ -87,7 +87,7 @@ body {
         float: center;}
 
         pre {font-family: 'Mynerve', cursive;
-            margin: 16PX 90px 16px 90px;}}
+            margin: 16PX 90px 16px 90px;}
 
         #datos {grid-column-start: 3;
         grid-column-end: 4;
