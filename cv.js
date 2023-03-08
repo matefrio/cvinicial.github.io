@@ -288,31 +288,46 @@ function reiniciar() {
     completo.id = "rayuela1";
   })}}*/
 
-function reemplazar() {
-  var palabra = document.getElementById('poema').value;
-    
-  if (palabra == 'fuente') {
-    document.getElementById('probar').addEventListener('click', function () {
-    document.getElementById('poema').style.display = "none";
-    document.getElementById('probar').style.display = "none";
-    document.getElementById('rayuela1').style.display = "none";
-    document.getElementById('completo').style.display = "block";
-    document.getElementById('reiniciar').style.display = "block";
-  })}
-  else {alert('La palabra ingresada no es correcta.');
-}}
-
-function reiniciar() {
-  var completo = document.getElementById('completo');
-  var contenidoInicial6 = completo.innerHTML;
-
-  if (completo.innerHTML == contenidoInicial6) {
-    document.getElementById('reiniciar').addEventListener('click', function () {
-    document.getElementById('poema').style.display = "block";
-    document.getElementById('probar').style.display = "block";
-    document.getElementById('rayuela1').style.display = "block";
-    document.getElementById('completo').style.display = "none";
-    document.getElementById('reiniciar').style.display = "none";
-  })}}
+  function reemplazar() {
+    var palabra = document.getElementById('poema').value;
+      
+    if (palabra == 'fuente') {
+      document.getElementById('probar').addEventListener('click', function (event) {
+      event.stopPropagation();
+      document.getElementById('poema').style.display = "none";
+      document.getElementById('probar').style.display = "none";
+      document.getElementById('rayuela1').style.display = "none";
+      document.getElementById('completo').style.display = "block";
+      document.getElementById('reiniciar').style.display = "block";
+    })}
+    else {alert('La palabra ingresada no es correcta.');
+  }};
+  
+  function reiniciar() {
+    var completo = document.getElementById('completo');
+    var contenidoInicial6 = completo.innerHTML;
+  
+    if (completo.innerHTML == contenidoInicial6) {
+      document.getElementById('reiniciar').addEventListener('click', function (event) {
+      event.stopPropagation();
+      document.getElementById('poema').style.display = "block";
+      document.getElementById('probar').style.display = "block";
+      document.getElementById('rayuela1').style.display = "block";
+      document.getElementById('completo').style.display = "none";
+      document.getElementById('reiniciar').style.display = "none";
+    })
+  }};
+  
+  var body = document.getElementById("body");
+  
+  body.addEventListener("click", function(){
+      if (document.getElementById('completo').style.display == "block",
+      document.getElementById('reiniciar').style.display == "block") {
+      document.getElementById('poema').style.display = "block";
+      document.getElementById('probar').style.display = "block";
+      document.getElementById('rayuela1').style.display = "block";
+      document.getElementById('completo').style.display = "none";
+      document.getElementById('reiniciar').style.display = "none";
+    }})
 
   

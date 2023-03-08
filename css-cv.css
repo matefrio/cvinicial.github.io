@@ -7,8 +7,8 @@ body {
       color: aliceblue; }
 
       a:link {color: rgb(175, 194, 245);
-            background-color: transparent;
-            text-decoration: none;}
+              background-color: transparent;
+              text-decoration: none;}
           
       a:visited {color: rgb(238, 147, 162);
                  background-color: transparent;
@@ -20,136 +20,138 @@ body {
       
       a:active {color: rgba(255, 255, 0, 0.699);
                 background-color: transparent;
-                text-decoration: none;}
+                text-decoration: none;}   
 
 #Minibiografía {font-family: 'Josefin Sans', sans-serif;}
 
-    .grid-container-bio {display: grid;
-        grid-template-columns: auto auto;
-        grid-template-columns: 20% 80%;
-        padding: 40px 10px 60px 10px;
-        margin: 10PX;
-        gap: 01px;}
+.grid-container-bio {display: grid;
+                     grid-template-columns: auto auto;
+                     grid-template-columns: 20% 80%;
+                     padding: 40px 10px 60px 10px;
+                     margin: 10PX;
+                     gap: 01px;}
 
-    #flecha {grid-column: 1 / span 1;
-    margin: 13px 10px 10px 10px;}
+      #flecha {grid-column: 1 / span 1;
+               margin: 13px 10px 10px 10px;}
 
-    h1 {grid-column: 2 / span 3;
-    font-family: 'Labrada', serif;
-    color: rgb(201, 201, 201);}
+      h1 {grid-column: 2 / span 3;
+          font-family: 'Labrada', serif;
+          color: rgb(201, 201, 201);}
 
-    #b {color: rgb(121, 27, 64);
-    background-color: transparent;
-    text-decoration: none;}
+      #b {color: rgb(121, 27, 64);
+          background-color: transparent;
+          text-decoration: none;}
 
-    .row {padding: 20px 1px 20px 1px;}
+.row {padding: 20px 1px 20px 1px;}
+      
+            h5 {float: left;
+                padding: 30px 10px 50px 10px;}
 
-    h5 {float: left;
-    padding: 30px 10px 50px 10px;}
+            #h5-1 {float: left;
+                   padding: 40px 10px 50px 10px;}
 
-    #h5-1 {float: left;
-        padding: 40px 10px 50px 10px;}
+            #h5-2 {float: left;
+                   padding: 7px 10px 20px 5px;
+                   margin: 10px 0px 10px 0px;}
 
-    #h5-2 {float: left;
-        padding: 7px 10px 20px 5px;
-        margin: 10px 0px 10px 0px;}
+            #bio {float: center;
+                  padding: 10px;}
+                       
+            #img {float: right;
+                  width: 450px;
+                  height: 253px;
+                  padding: 10px;}
+                         
+.grid-container-arriba {display: grid;
+                        grid-template-columns: auto auto auto;
+                        grid-template-columns: 30% 45% 25%;
+                        /**background-image: url('https://image.freepik.com/foto-gratis/fondo-textura-concreto-textura-grunge_7189-493.jpg');
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover;*/
+                        background-color: rgb(180, 171, 158);
+                        color: rgba(36, 17, 2, 0.925); 
+                        border-radius: 7px;}    
 
-    #bio {float: center;
-    padding: 10px;}
+      header {font-size:150%;
+              float: center;
+              }
+
+      menu {grid-column-start: 1;
+            grid-column-end: 2;
+            float: left;
+            padding: 0px;}
+
+      main {grid-column-start: 2;
+            grid-column-end: 3;
+            float: center;}
+
+      #poem {font-family: 'Mynerve', cursive;
+             color: rgb(136, 32, 70);
+             margin: 16PX 90px 16px 90px;}
+
+      #datos {grid-column-start: 3;
+              grid-column-end: 4;
+              text-align: right;
+              float: right;}
             
-    #img {float: right;
-    width: 450px;
-    height: 253px;
-    padding: 10px;}
-            
-    .grid-container-arriba {display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-columns: 30% 45% 25%;
-            /**background-image: url('https://image.freepik.com/foto-gratis/fondo-textura-concreto-textura-grunge_7189-493.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;*/
-            background-color: rgb(180, 171, 158);
-            color: rgba(36, 17, 2, 0.925); 
-            border-radius: 7px;}    
+            button {border-style: outset;
+                    border-radius: 10px;
+                    border-color: rgb(158, 149, 137);
+                    background-color: white;}
 
-        header {font-size:150%;
-        float: center;
-        }
+.grid-container-abajo {display: grid;
+                       grid-template-columns: 50% 50%;}    
 
-        menu {grid-column-start: 1;
-        grid-column-end: 2;
-        float: left;
-        padding: 0px;}
+      #work {grid-column-start: 1;
+             grid-column-end: 2;
+             float: left;
+             padding: 15px;}
 
-        main {grid-column-start: 2;
-        grid-column-end: 3;
-        float: center;}
+            #Contacto {float: left;
+                       border: 1px solid #969494;
+                       border-radius: 5px;
+                       text-align: left;
+                       padding: 8px;}
+                  
+                  h4 {color: rgb(61, 11, 29);
+                      font-size: 20px;
+                      font-weight: bold;
+                      margin: 15px;}
 
-        pre {font-family: 'Mynerve', cursive;
-            margin: 16PX 90px 16px 90px;}
+                  label {color: rgb(224, 216, 219);
+                         font-size: 15px;
+                         font-weight: bold;}
+                  
+                  hr {border-style: none;}
 
-        #datos {grid-column-start: 3;
-        grid-column-end: 4;
-        text-align: right;
-        float: right;}
+                  input {color: rgb(75, 10, 34);
+                         font-size: 14px;}
 
-        button {border-style: outset;
-            border-radius: 10px;
-            border-color: rgb(158, 149, 137);
-            background-color: white;}
+                  #violin {border-style: outset;
+                           border-radius: 10px;
+                           border-color: rgb(167, 167, 167);
+                           background-color: rgb(83, 83, 83);}
+                  
+      #mitad {grid-column-start: 2;
+              grid-column-end: 3;
+              float: right;
+              padding: 15px;}
 
-    .grid-container-abajo {display: grid;
-            grid-template-columns: 50% 50%;}    
+              #Rayuela {text-align: center;
+                        font-style: italic;
+                        font-family: 'Mynerve', cursive;
+                        padding: 0px 0px 0px 53px;
+                        color: rgb(238, 147, 162)}
+                                   
+              pre {text-align: center;
+                   font-family: 'Mynerve', cursive;
+                   font-style: italic;
+                   color: rgb(224, 216, 219);}
 
-        #work {grid-column-start: 1;
-        grid-column-end: 2;
-        float: left;
-        padding: 15px;}
-
-        #Contacto {float: left;
-                border: 1px solid #969494;
-                border-radius: 5px;
-                text-align: left;
-                padding: 8px;}
-        
-            h4 {color: rgb(61, 11, 29);
-                font-size: 20px;
-                font-weight: bold;
-                margin: 15px;}
-
-            label {color: rgb(224, 216, 219);
-                    font-size: 15px;
-                    font-weight: bold;}
-            
-            hr {border-style: none;}
-
-            input {color: rgb(75, 10, 34);
-                    font-size: 14px;}
-
-            #violin {border-style: outset;
-                        border-radius: 10px;
-                        border-color: rgb(167, 167, 167);
-                        background-color: rgb(83, 83, 83);}
-            
-        #mitad {grid-column-start: 2;
-        grid-column-end: 3;
-        float: right;
-        padding: 15px;}
-
-            #Rayuela {float: center;
-                    font-style: italic;
-                    font-family: 'Mynerve', cursive;
-                    padding: 0px 0px 0px 53px;
-                    color: rgb(238, 147, 162)}
-                                
-            .ray {float: center;
-                font-style: italic;
-                color: rgb(224, 216, 219);}
-
-            .compl {float: center;
-                font-style: italic;
-                color: rgb(224, 216, 219);}
+              #poema {text-align: center;
+                      color: rgb(75, 10, 34);
+                      font-size: 14px;}
 
 
 
